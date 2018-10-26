@@ -26,7 +26,6 @@ namespace Test
 			c112 = new Course("Nuru Massage using Chia Oil", 157);
 		}
 
-
 		[TestMethod]
 		public void AllBookConstructorsWorkProperly()
 		{
@@ -42,12 +41,14 @@ namespace Test
 			Assert.AreEqual("ItemId: 12, Quality: high, Design: ", a12.ToString());
 			Assert.AreEqual("ItemId: 13, Quality: low, Design: Capricorn", a13.ToString());
 		}
+
 		//[TestMethod]
 		//public void AllMerchandiseConstructorsWorkProperly()
 		//{
 		//	Merchandise m = new Merchandise("100");
 		//	Assert.AreEqual("ItemId: 100", m.ToString());
 		//}
+
 		[TestMethod]
 		public void AllCourseConstructorsWorkProperly()
 		{

@@ -8,8 +8,11 @@ namespace Morgengry
 {
 	public class Amulet : Merchandise
 	{
-		public string Design { get; set; }
-		public Level Quality { get; set; }
+		private string design;
+		private Level quality;
+
+		public string Design { get { return design; } set { design = value; } }
+		public Level Quality { get { return quality; } set { quality = value; } }
 
 		public Amulet(string itemId, Level quality, string design)
 		{
