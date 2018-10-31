@@ -13,13 +13,13 @@ namespace Morgengry
 		public string Title	{ get { return title; } set { title = value; } }
 		public double Price { get { return price; } set { price = value; } }
 
-		public Book(string itemId, string title, double price)
+		public Book( string itemId, string title, double price )
 		{
 			ItemId = itemId;
 			Title = title;
 			Price = price;
 		}
-		public Book(string itemId, string title) : 
+		public Book( string itemId, string title ) : 
 			this (itemId, title, 0)
 		{
 		}
@@ -29,7 +29,12 @@ namespace Morgengry
 		}
 		public override string ToString()
 		{
-			return $"ItemId: {ItemId}, Title: {Title}, Price: {Price}";
+			return $"{ base.ToString() }, Title: { Title }, Price: { Price }";
+		}
+
+		public override double GetValue()
+		{
+			return this.Price;
 		}
 	}
 }

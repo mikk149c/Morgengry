@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-	abstract public class Merchandise
+	public abstract class Merchandise : IValuable
 	{
 		private string itemId;
 		public string ItemId { get { return itemId; } set { itemId = value; } }
@@ -14,5 +14,6 @@ namespace Morgengry
 		{
 			return $"ItemId: {ItemId}";
 		}
+		public abstract double GetValue();
 	}
 }
