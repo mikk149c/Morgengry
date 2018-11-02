@@ -47,6 +47,7 @@
     <Compile Include="Book.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="CourseRepository.cs" />
+    <Compile Include="IPersistable.cs" />
     <Compile Include="IValuable.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="Merchandise.cs" />

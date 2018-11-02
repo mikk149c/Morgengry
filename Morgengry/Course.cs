@@ -42,7 +42,5 @@ namespace Morgengry
 		{
 			return $"Name: {Name}, Duration in Minutes: {DurationInMinutes}, Pris pr påbegyndt time: {CourseHourValue}";
 		}
-
-		
 	}
 }
